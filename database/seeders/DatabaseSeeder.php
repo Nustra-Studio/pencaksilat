@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'admin',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
-            'password' => '$2y$10$cjF6uX/ecymGhdxPX5/n2.VUVSctPIZOz4cCfjynOT6...',
+            'password' => '$2y$$2y$10$oix4RQtzAvReu6VQBR.RHOFxPcHFQZ6e/yKqQuIii.A.m9fkTbyA.',
             'remember_token' => Str::random(10),
             'role'=> "admin"
         ]);
