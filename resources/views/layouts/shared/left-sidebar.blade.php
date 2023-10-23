@@ -34,9 +34,9 @@
                 $role = auth()->user()->role;
             @endphp
         <li class="side-nav-item">
-            <a href="{{ route("any", "$role/barang/create") }}" class="side-nav-link">
+            <a href="{{ route("any", "$role/kontigen") }}" class="side-nav-link">
                 <i class="  ri-shopping-cart-line"></i>
-                <span> Input Barang</span>
+                <span> Input Barang </span>
             </a>
         </li>
         <li class="side-nav-item">
@@ -93,12 +93,6 @@
                 <a href="{{ route("any", "$role/event") }}" class="side-nav-link">
                     <i class=" ri-box-3-line "></i>
                     <span> Rak</span>
-                </a>
-            </li>
-            <li class="side-nav-item">
-                <a href="{{ route("any", "$role/event") }}" class="side-nav-link">
-                    <i class=" ri-list-check-3 "></i>
-                    <span> Status</span>
                 </a>
             </li>
             {{-- <li class="side-nav-item">
