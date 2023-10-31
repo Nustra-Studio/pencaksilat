@@ -33,18 +33,7 @@
             @php
                 $role = auth()->user()->role;
             @endphp
-        <li class="side-nav-item">
-            <a href="{{ route("any", "$role/kontigen") }}" class="side-nav-link">
-                <i class="  ri-shopping-cart-line"></i>
-                <span> Input Barang </span>
-            </a>
-        </li>
-        <li class="side-nav-item">
-            <a href="{{ route("any", "$role/kontigen") }}" class="side-nav-link">
-                <i class="  ri-shopping-bag-line"></i>
-                <span> Penjualan </span>
-            </a>
-        </li>
+
             <li class="side-nav-item">
                 <a href="{{ route("any", "$role/index") }}" class="side-nav-link">
                     <i class="ri-dashboard-3-line"></i>
@@ -62,16 +51,13 @@
                 <div class="collapse" id="sidebarCharts">
                     <ul class="side-nav-second-level">
                         <li>
-                            <a href="{{ route('second', ["$role", 'barang']) }}">Barang</a>
+                            <a href="{{ route('second', ["$role", 'juri']) }}">Juri</a>
                         </li>
                         <li>
-                            <a href="{{ route('second', ["$role", 'mitra']) }}">Mitra</a>
+                            <a href="{{ route('second', ["$role", 'category']) }}">Categorys</a>
                         </li>
                         <li>
-                            <a href="{{ route('second', ["$role", 'rak']) }}">Rak</a>
-                        </li>
-                        <li>
-                            <a href="{{ route('second', ["$role", 'supplier']) }}">Supplier</a>
+                            <a href="{{ route('second', ["$role", 'kelas']) }}">Kelas</a>
                         </li>
                     </ul>
                 </div>
@@ -79,28 +65,28 @@
             @endif
             <li class="side-nav-item">
                 <a href="{{ route("any", "$role/kontigen") }}" class="side-nav-link">
-                    <i class=" ri-p2p-fill"></i>
-                    <span> Distribusi Kain Mitra </span>
+                    <i class=" ri-layout-3-line"></i>
+                    <span> kontigen </span>
                 </a>
             </li>
             <li class="side-nav-item">
                 <a href="{{ route("any", "$role/pesilat") }}" class="side-nav-link">
-                    <i class="  ri-gift-line"></i>
-                    <span> Pengemasan </span>
+                    <i class=" ri-user-3-line"></i>
+                    <span> Pesilat/Atlet </span>
                 </a>
             </li>
             <li class="side-nav-item">
                 <a href="{{ route("any", "$role/event") }}" class="side-nav-link">
-                    <i class=" ri-box-3-line "></i>
-                    <span> Rak</span>
+                    <i class=" ri-file-text-line"></i>
+                    <span> Events </span>
                 </a>
             </li>
-            {{-- <li class="side-nav-item">
+            <li class="side-nav-item">
                 <a href="{{ route("any", "$role/peserta") }}" class="side-nav-link">
                     <i class=" ri-user-3-line"></i>
                     <span> Perserta </span>
                 </a>
-            </li> --}}
+            </li>
         </ul>
         <!--- End Sidemenu -->
 

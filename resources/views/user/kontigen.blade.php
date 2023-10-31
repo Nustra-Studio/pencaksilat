@@ -29,11 +29,17 @@
 <div class="row mt-xl-3">
     <div class="col-12">
         <div class="card">
+            @php
+            $id =auth()->user()->id;
+            $data_check = KontigenModel::where('id_user',$id)->first();
+        @endphp
             <div class="card-header">
                 <h4 class="header-title">Data Kontingen/Sekolah</h4>
+                @if (empty($data_check))
                 <div class="button mt-2">
                     <a href="/{{$role}}/kontigen/add" class="btn btn-primary rounded-pill">Tambah Data</a>
                 </div>
+                @endif
             </div>
             <div class="card-body">
                 <div class="responsive-table-plugin">
