@@ -17,17 +17,10 @@
       "__commonjsHelpers-de833af9.js"
     ]
   },
-  "_jquery-ef5d6b77.js": {
-    "file": "assets/jquery-ef5d6b77.js",
+  "_jquery-3292200b.js": {
+    "file": "assets/jquery-3292200b.js",
     "imports": [
       "__commonjsHelpers-de833af9.js"
-    ]
-  },
-  "_jquery-fa405a0b.js": {
-    "file": "assets/jquery-fa405a0b.js",
-    "imports": [
-      "__commonjsHelpers-de833af9.js",
-      "_jquery-ef5d6b77.js"
     ]
   },
   "_moment-c4b8f605.js": {
@@ -40,11 +33,11 @@
       "__commonjs-dynamic-modules-302442b1.js"
     ]
   },
-  "_select2-9513f197.js": {
-    "file": "assets/select2-9513f197.js",
+  "_select2-2ff3486d.js": {
+    "file": "assets/select2-2ff3486d.js",
     "imports": [
       "__commonjsHelpers-de833af9.js",
-      "_jquery-ef5d6b77.js"
+      "_jquery-3292200b.js"
     ]
   },
   "node_modules/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css": {
@@ -209,12 +202,11 @@
     "src": "resources/js/config.js"
   },
   "resources/js/head.js": {
-    "file": "assets/head-f68977c3.js",
+    "file": "assets/head-69bf3a5a.js",
     "imports": [
-      "_jquery-fa405a0b.js",
+      "_jquery-3292200b.js",
       "__commonjsHelpers-de833af9.js",
-      "_moment-c4b8f605.js",
-      "_jquery-ef5d6b77.js"
+      "_moment-c4b8f605.js"
     ],
     "isEntry": true,
     "src": "resources/js/head.js"
@@ -225,15 +217,15 @@
     "src": "resources/js/layout.js"
   },
   "resources/js/main.js": {
-    "file": "assets/main-7975522d.js",
+    "file": "assets/main-ff97e291.js",
     "imports": [
-      "_select2-9513f197.js",
+      "_select2-2ff3486d.js",
       "_moment-c4b8f605.js",
       "_moment.min-c3f24946.js",
       "_daterangepicker-dd5ff7b7.js",
       "__commonjsHelpers-de833af9.js",
       "_index-82339090.js",
-      "_jquery-ef5d6b77.js",
+      "_jquery-3292200b.js",
       "__commonjs-dynamic-modules-302442b1.js"
     ],
     "isEntry": true,
@@ -275,24 +267,24 @@
     "src": "resources/js/pages/datatable.init.js"
   },
   "resources/js/pages/fileupload.init.js": {
-    "file": "assets/fileupload.init-20a5273e.js",
+    "file": "assets/fileupload.init-8592a4a7.js",
     "imports": [
-      "_select2-9513f197.js",
+      "_select2-2ff3486d.js",
       "_moment-c4b8f605.js",
       "_moment.min-c3f24946.js",
       "_daterangepicker-dd5ff7b7.js",
       "__commonjsHelpers-de833af9.js",
-      "_jquery-ef5d6b77.js",
+      "_jquery-3292200b.js",
       "__commonjs-dynamic-modules-302442b1.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/fileupload.init.js"
   },
   "resources/js/pages/form-advanced.init.js": {
-    "file": "assets/form-advanced.init-910b1fa4.js",
+    "file": "assets/form-advanced.init-c5235613.js",
     "imports": [
       "__commonjsHelpers-de833af9.js",
-      "_jquery-ef5d6b77.js",
+      "_jquery-3292200b.js",
       "_moment-c4b8f605.js",
       "_daterangepicker-dd5ff7b7.js"
     ],
@@ -300,11 +292,10 @@
     "src": "resources/js/pages/form-advanced.init.js"
   },
   "resources/js/pages/form-imagecrop.init.js": {
-    "file": "assets/form-imagecrop.init-482b404d.js",
+    "file": "assets/form-imagecrop.init-5fe664d0.js",
     "imports": [
-      "_jquery-fa405a0b.js",
-      "__commonjsHelpers-de833af9.js",
-      "_jquery-ef5d6b77.js"
+      "_jquery-3292200b.js",
+      "__commonjsHelpers-de833af9.js"
     ],
     "isEntry": true,
     "src": "resources/js/pages/form-imagecrop.init.js"
@@ -356,9 +347,9 @@
     "src": "resources/js/pages/quilljs.init.js"
   },
   "resources/js/pages/range-slider.init.js": {
-    "file": "assets/range-slider.init-71bc6840.js",
+    "file": "assets/range-slider.init-7371f86d.js",
     "imports": [
-      "_jquery-ef5d6b77.js",
+      "_jquery-3292200b.js",
       "__commonjsHelpers-de833af9.js"
     ],
     "isEntry": true,

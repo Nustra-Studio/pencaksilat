@@ -31,7 +31,7 @@
         <div class="card">
             @php
             $id =auth()->user()->id;
-            $data_check = KontigenModel::where('id_user',$id)->first();
+            $data_check =KontigenModel::where('id_user',$id)->first();
         @endphp
             <div class="card-header">
                 <h4 class="header-title">Data Kontingen/Sekolah</h4>
