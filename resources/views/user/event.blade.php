@@ -59,22 +59,24 @@
                             @php
                                 $status = "nonactive"
                             @endphp
-                        @endif
-                        @if ($tanggal_akhir_format < $date)
-                            Selesai
-                                @php
-                                    $status = "nonactive"
-                                @endphp
                         @else
-                            active
+                                @if ($tanggal_akhir_format < $date)
+                                Selesai
                                     @php
-                                        $status = "active"
+                                        $status = "nonactive"
                                     @endphp
+                                @else
+                                    active
+                                            @php
+                                                $status = "active"
+                                            @endphp
+                                @endif
                         @endif
+                        
                         <br>
                         Catatan :{{$item->catatan}}
                         </p>
-                        @if ($item->status === "active")
+                        @if ($status === "active")
                         <a href="" class="btn btn-primary">Daftar</a>
                         @else
                         <a href="javascript: void(0);" class="btn btn-secondary">Desiable</a>
