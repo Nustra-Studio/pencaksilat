@@ -34,7 +34,7 @@
             $data_check =KontigenModel::where('id_user',$id)->first();
         @endphp
             <div class="card-header">
-                <h4 class="header-title">Data Kontingenv/Sekolah</h4>
+                <h4 class="header-title">Data Kontingen/Sekolah</h4>
                 @if (empty($data_check))
                 <div class="button mt-2">
                     <a href="/{{$role}}/kontigen/add" class="btn btn-primary rounded-pill">Tambah Data</a>

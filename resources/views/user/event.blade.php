@@ -55,7 +55,11 @@
                         Status :{{$item->status}} <br>
                         Catatan :{{$item->catatan}}
                         </p>
-                        <a href="javascript: void(0);" class="btn btn-primary">Comming Soon</a>
+                        @if ($item->status === "active")
+                        <a href="" class="btn btn-primary">Daftar</a>
+                        @else
+                        <a href="javascript: void(0);" class="btn btn-secondary">Comming Soon</a>
+                        @endif
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
             </div><!-- end col -->
