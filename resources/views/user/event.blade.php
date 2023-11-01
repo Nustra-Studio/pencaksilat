@@ -38,6 +38,7 @@
                     // Mengonversi tanggal awal dan akhir ke format yang diinginkan
                     $tanggal_awal_format = date("j F", strtotime($tanggal_awal));
                     $tanggal_akhir_format = date("j F Y", strtotime($tanggal_akhir));
+                    $date = date("j F Y");
 
                     // Menggabungkan dalam format yang diinginkan
                     $hasil_konversi = $tanggal_awal_format . " - " . $tanggal_akhir_format;
@@ -52,13 +53,31 @@
                         <p class="card-text">
                         <br>
                         Max Perserta :{{$item->max_perserta}} <br>
-                        Status :{{$item->status}} <br>
+                        Status: 
+                        @if ($tanggal_awal_format > $date)
+                            Comming soon
+                            @php
+                                $status = "nonactive"
+                            @endphp
+                        @endif
+                        @if ($tanggal_akhir_format < $date)
+                            Selesai
+                                @php
+                                    $status = "nonactive"
+                                @endphp
+                        @else
+                            active
+                                    @php
+                                        $status = "active"
+                                    @endphp
+                        @endif
+                        <br>
                         Catatan :{{$item->catatan}}
                         </p>
                         @if ($item->status === "active")
                         <a href="" class="btn btn-primary">Daftar</a>
                         @else
-                        <a href="javascript: void(0);" class="btn btn-secondary">Comming Soon</a>
+                        <a href="javascript: void(0);" class="btn btn-secondary">Desiable</a>
                         @endif
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
