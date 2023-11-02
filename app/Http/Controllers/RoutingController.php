@@ -34,7 +34,7 @@ class RoutingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function root(Request $request, $first)
+    public function root(Request $request, $first,$id)
     {
 
         $mode = $request->query('mode');
@@ -47,7 +47,7 @@ class RoutingController extends Controller
             return redirect('home');
         // check mate middleware
         if($check !== false || $index !== false){
-            return view($first, ['mode' => $mode, 'demo' => $demo]);
+            return view($first, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
         }
         else{
             return view("404",['mode' => $mode, 'demo' => $demo]);
@@ -58,7 +58,7 @@ class RoutingController extends Controller
     /**
      * second level route
      */
-    public function secondLevel(Request $request, $first, $second)
+    public function secondLevel(Request $request, $first, $second , $id)
     {
 
         $mode = $request->query('mode');
@@ -73,8 +73,11 @@ class RoutingController extends Controller
                 return redirect('home');
             // check mate middleware
             if($check !== false){
-                return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo]);
+                return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
             }
+            // elseif($first === "daftar" || $check !== false){
+            //     return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo,'event' => $id]);
+            // }
             else{
                 return view("404",['mode' => $mode, 'demo' => $demo]);
             }
