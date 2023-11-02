@@ -42,6 +42,7 @@ Route::group(['prefix' => '/', 'middleware'=>'auth'], function () {
     Route::resource('kontigen', KontigenController::class);
     Route::resource('pesilat', PesilatController::class);
     Route::resource('peserta', PesertaController::class);
+    Route::get('daftar/{id}',[PesertaController::class, 'event'])->name('daftar');
     Route::resource('event', EventController::class);
     Route::middleware(['role:admin'])->group(function () {
         Route::resource('category', CategoryController::class);

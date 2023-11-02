@@ -77,9 +77,9 @@
                         Catatan :{{$item->catatan}}
                         </p>
                         @if ($status === "active")
-                        <a href="" class="btn btn-primary">Daftar</a>
+                        <a href="{{url("daftar/$item->id")}}" class="btn btn-primary">Daftar</a>
                         @else
-                        <a href="javascript: void(0);" class="btn btn-secondary">Desiable</a>
+                        <a href="javascript: void(0);" class="btn btn-secondary">Disable</a>
                         @endif
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->

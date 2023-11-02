@@ -14,7 +14,9 @@ class PesertaController extends Controller
     {
         //
     }
-
+    public function event($id){
+        
+    }
     /**
      * Show the form for creating a new resource.
      */
