@@ -79,7 +79,7 @@
                         @if ($status === "active")
                         <a href="{{url("daftar/$item->id")}}" class="btn btn-primary">Daftar</a>
                         @else
-                        <a href="javascript: void(0);" class="btn btn-secondary">Disable</a>
+                        <a href="javascript: void(0);" class="btn btn-secondary">Daftar</a>
                         @endif
                     </div> <!-- end card-body-->
                 </div> <!-- end card-->
