@@ -34,7 +34,7 @@ class RoutingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function root(Request $request, $first)
+    public function root(Request $request, $first, $id)
     {
 
         $mode = $request->query('mode');
