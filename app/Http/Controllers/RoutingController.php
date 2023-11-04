@@ -59,7 +59,7 @@ class RoutingController extends Controller
     /**
      * second level route
      */
-    public function secondLevel(Request $request, $first, $second , $id)
+    public function secondLevel(Request $request, $first, $second)
     {
 
         $mode = $request->query('mode');
@@ -74,7 +74,8 @@ class RoutingController extends Controller
                 return redirect('home');
             // check mate middleware
             if($check !== false){
-                return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
+                // return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
+                return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo]);
             }
             // elseif($first === "daftar" || $check !== false){
             //     return view($first .'.'. $second, ['mode' => $mode, 'demo' => $demo,'event' => $id]);
