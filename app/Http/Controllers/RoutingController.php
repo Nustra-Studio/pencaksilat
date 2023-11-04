@@ -34,7 +34,7 @@ class RoutingController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function root(Request $request, $first, $id)
+    public function root(Request $request, $first)
     {
 
         $mode = $request->query('mode');
@@ -47,7 +47,8 @@ class RoutingController extends Controller
             return redirect('home');
         // check mate middleware
         if($check !== false || $index !== false){
-            return view($first, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
+            // return view($first, ['mode' => $mode, 'demo' => $demo,'id'=>$id]);
+            return view($first, ['mode' => $mode, 'demo' => $demo]);
         }
         else{
             return view("404",['mode' => $mode, 'demo' => $demo]);
